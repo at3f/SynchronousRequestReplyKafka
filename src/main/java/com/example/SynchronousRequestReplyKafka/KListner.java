@@ -11,7 +11,6 @@ public class KListner {
     @KafkaListener(topics = "${kafka.topic.request-topic}")
     @SendTo
     public Reply listen(Model x) throws InterruptedException {
-//        return new Model("Hello "+x.getName(),58);
         return new Reply("Hello "+x.getName());
     }
 }
