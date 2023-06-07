@@ -1,4 +1,4 @@
-package com.example.SynchronousRequestReplyKafka;
+package com.example.SynchronousRequestReplyKafka.listner;
 
 import com.example.SynchronousRequestReplyKafka.model.Model;
 import com.example.SynchronousRequestReplyKafka.model.Reply;

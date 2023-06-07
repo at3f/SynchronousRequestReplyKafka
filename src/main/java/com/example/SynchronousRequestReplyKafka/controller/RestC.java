@@ -1,4 +1,4 @@
-package com.example.SynchronousRequestReplyKafka.controllers;
+package com.example.SynchronousRequestReplyKafka.controller;
 
 import com.example.SynchronousRequestReplyKafka.model.Model;
 import com.example.SynchronousRequestReplyKafka.model.Reply;
@@ -8,12 +8,9 @@ import org.apache.kafka.common.header.internals.RecordHeader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
-import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.requestreply.ReplyingKafkaTemplate;
 import org.springframework.kafka.requestreply.RequestReplyFuture;
 import org.springframework.kafka.support.KafkaHeaders;
-import org.springframework.kafka.support.SendResult;
-import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
